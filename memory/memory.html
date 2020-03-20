@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+  <head>
+    <title>Memory</title>
+    <script type="text/javascript" src="memory.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.17.1/dist/sweetalert2.all.min.js"></script>
+     <link rel="stylesheet" href="memory.css">
+
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  </head>
+
+  <body id="body">
+    <div class="bar w3-bar w3-black">
+        <div class="bar2 w3-dropdown-hover">
+          <button class="bar2 w3-button w3-black">Difficoltà</button>
+          <div class="bar2 w3-dropdown-content w3-bar-block w3-border">
+            <button class="bar2 w3-bar-item w3-button w3-green" onclick="create(4)">2x2</button>
+            <button class="bar2 w3-bar-item w3-button w3-yellow" onclick="create(8)">4x2</button>
+            <button class="bar2 w3-bar-item w3-button w3-red" onclick="create(16)">4x4</button>
+          </div>
+        </div>
+    </div>
+
+    <div id="game" class="w3-container w3-center">
+      <!-- aggiungere timer -->
+      <div id="grid" class="w3-container w3-center">
+      </div>
+    </div>
+
+
+    <footer>Ringrazio <a href="pexels.com">Pexels.com</a> per le immagini gratuite che utilizzo in questo gioco</footer>
+
+
+  </body>
+</html>

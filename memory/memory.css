@@ -1,0 +1,80 @@
+.card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.face {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  transform: rotateY( 180deg );
+}
+
+
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.unclickable
+{
+  pointer-events: none;
+}
+
+.w3-red
+{
+	color:#FFF!important;
+    background-color:#e43030!important
+}
+
+.w3-black
+{
+	color:#FFF!important;
+    background-color:#000!important
+}
+
+.w3-yellow
+{
+	color:#FFF!important;
+    background-color:#ffcc00!important
+}
+
+.w3-green
+{
+	color:#FFF!important;
+    background-color:#33cc33!important
+}
+
+.img
+{
+  max-width: 50%;
+  height:100%;
+}
+
+@media only screen and (max-width: 1080px) 
+{
+.img{
+	max-width: 50%;
+  	height:250px;
+}
+#grid
+{
+	padding-top: 50px;
+}
+
+.bar
+{
+	height:100px;
+}
+
+.bar2
+{
+	width:200px;
+	height:100px;
+    font-size:40px;
+    vertical-align: middle;
+}
+}
