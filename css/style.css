@@ -14,26 +14,41 @@ TWITTER: https://twitter.com/themefisher
 FACEBOOK: https://www.facebook.com/themefisher
 */
 /*  typography */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  background-color: #fff;
   line-height: 1.2;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c;
+  overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  border: 1px solid #465ad4;
+}
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eeeeee;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #465ad4;
+}
+
 
 p, .paragraph {
   font-weight: 400;
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: "Roboto", sans-serif;
 }
 p-lg, .paragraph-lg {
   font-size: 22px;
@@ -41,7 +56,6 @@ p-lg, .paragraph-lg {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", serif;
   line-height: 1.2;
 }
 
@@ -82,7 +96,6 @@ h6, .h6 {
 /* Button style */
 .btn {
   font-size: 22px;
-  font-family: "Playfair Display", serif;
   text-transform: capitalize;
   padding: 16px 44px;
   border-radius: 5px;
@@ -130,11 +143,6 @@ h6, .h6 {
 }
 .btn-transparent:active, .btn-transparent:hover {
   color: #3248c7;
-}
-
-body {
-  background-color: #fff;
-  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -203,17 +211,16 @@ a:hover {
 }
 
 .section {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 80px;
 }
 
 .section > .container{
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .section-title {
-  margin-bottom: 80px;
-  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
 }
 
 .bg-cover {
@@ -323,14 +330,6 @@ a:hover {
   overflow: hidden;
 }
 
-.font-secondary {
-  font-family: "Playfair Display", serif !important;
-}
-
-.font-tertiary {
-  font-family: "Playfair Display", serif !important;
-}
-
 .shadow {
   box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
 }
@@ -437,7 +436,6 @@ textarea.form-control {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   padding: 15px;
 }
@@ -450,8 +448,9 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding: 300px 0 200px;
+  padding: 400px 0 200px;
   position: relative;
+  height: 1050px;
 }
 @media (max-width: 767px) {
   .hero-area {
@@ -459,10 +458,8 @@ textarea.form-control {
     overflow: hidden;
   }
 }
-
-.hero-area h1 {
-  position: relative;
-  z-index: 2;
+.sm-title, .bg-title{
+  color: #fff !important;
 }
 
 /* skills */
@@ -516,6 +513,7 @@ textarea.form-control {
     transform: translateX(-50%) rotate(360deg);
   }
 }
+
 /* /skills */
 
 /* education */
@@ -526,33 +524,6 @@ textarea.form-control {
   z-index: -1;
 }
 /* /education */
-
-/* service */
-.hover-bg-primary {
-  transition: 0.3s ease;
-}
-.hover-bg-primary:hover {
-  background: #3248c7;
-}
-.hover-bg-primary:hover * {
-  color: #fff;
-}
-
-.active-bg-primary {
-  transition: 0.3s ease;
-  background: #3248c7;
-}
-.active-bg-primary * {
-  color: #fff;
-}
-
-.hover-shadow {
-  transition: 0.2s ease;
-}
-.hover-shadow:hover {
-  box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
-}
-/* /service */
 
 /* portfolio */
 .hover-wrapper {
@@ -631,7 +602,7 @@ textarea.form-control {
 
 .footer-07{
   background: #222222;
-  padding: 5em 0;
+  padding: 5em 0 50px;
   column-gap: 2em;
   justify-content: space-between;
 }
@@ -648,6 +619,7 @@ textarea.form-control {
 
 .ftco-footer-social {
   margin-bottom: 2em;
+  padding: 0px !important;
 }
 
 .ftco-footer-social li {
@@ -680,6 +652,10 @@ textarea.form-control {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.py-5{
+  padding-bottom: 0px !important; 
+}
 /* /footer */
 
 
@@ -707,7 +683,6 @@ blockquote {
   margin-bottom: 20px;
 }
 .content strong {
-  font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: normal;
   color: #000;
